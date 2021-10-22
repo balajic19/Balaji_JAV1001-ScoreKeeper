@@ -1,5 +1,22 @@
 # JAV1001-ScoreKeeper
 
+## Student 1:  
+### Name: Balaji Chandupatla  
+### Student Number: A00245077  
+
+## Student 2:
+### Name: Pruthvi Sai Korupu
+### Student Number: A00245392     
+
+
+## Program Description:  
+### Program to  
+### 1. Cipher a given string using Caeser Cipher method.  
+### 2. Return the average of an array of integers.  
+### 3. Check if a given element is present in the array.  
+### 4. Return the reverse of the array. 
+
+
 One Paragraph of the project description
 
 Initially appeared on
