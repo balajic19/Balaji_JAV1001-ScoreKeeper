@@ -14,9 +14,9 @@ You can find the code [here](https://github.com/balajic19/Balaji_JAV1001-ScoreKe
 - Design a layout to shocase the scores of Cricket game between two teams.
 - The UI looks as below
 
-![scorekeeperSample](https://user-images.githubusercontent.com/64312736/138486780-ace9768f-9369-4649-be7f-b29c803d19d5.png)
+<!-- ![scorekeeperSample](https://user-images.githubusercontent.com/64312736/138486780-ace9768f-9369-4649-be7f-b29c803d19d5.png) -->
+![scorekeeperSample](scorekeeperSample.png)
 
-(scorekeeperSample.png)
 
 One Paragraph of the project description
 
