@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Balaji_JAV1001-ScoreKeeper</string>
+    <string name="gameName">CR!CKET</string>
+    <string name="scoreText">score</string>
+    <string name="teamA">TEAM A</string>
+    <string name="teamB">TEAM B</string>
+    <string name="teamAScore">0/0</string>
+    <string name="teamBScore">0/0</string>
+    <string name="oneRun">1</string>
+    <string name="twoRun">2</string>
+    <string name="threeRun">3</string>
+    <string name="fourRun">4</string>
+    <string name="sixRun">6</string>
 </resources>
