@@ -6,8 +6,7 @@
 
 - Student 2:  
   Name: Pruthvi Sai Korupu  
-  Student Number: A00245392      
-
+  Student Number: A00245392  
 
 ## Program Description:  
 ### Program to  
