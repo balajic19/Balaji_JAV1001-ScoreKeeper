@@ -1,5 +1,7 @@
 # JAV1001-ScoreKeeper
 
+You can find the code [here](https://github.com/balajic19/Balaji_JAV1001-ScoreKeeper.git) to clone.
+
 - Student 1:  
   Name: Balaji Chandupatla  
   Student Number: A00245077  
@@ -8,13 +10,11 @@
   Name: Pruthvi Sai Korupu  
   Student Number: A00245392  
 
-## Program Description:  
-### Program to  
-### 1. Cipher a given string using Caeser Cipher method.  
-### 2. Return the average of an array of integers.  
-### 3. Check if a given element is present in the array.  
-### 4. Return the reverse of the array. 
+## Lab Description:  
+- Design a layout to shocase the scores of Cricket game between two teams.
+- The UI looks as below
 
+(scorekeeperSample.png)
 
 One Paragraph of the project description
 
