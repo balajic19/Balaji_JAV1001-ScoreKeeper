@@ -60,9 +60,10 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scoreText"
-            app:layout_constraintVertical_bias="0.497">
+            app:layout_constraintVertical_bias="0.507">
 
             <!--            Creating a horizontal linear layout for 2 teams-->
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -92,7 +93,7 @@
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <!--                Creating team B-->
@@ -112,7 +113,7 @@
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -129,9 +130,10 @@
             <!--            Creating a horizontal Linear layout for scores-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/teamScore"
-                android:layout_marginBottom="10sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal">
 
                 <!--                Creating Scores for Team A-->
                 <TextView
@@ -140,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="45sp"
                     android:background="@color/black"
-                    android:text="@string/teamAScore"
+                    android:text="0/0"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="40sp" />
@@ -153,7 +155,7 @@
                     android:layout_marginStart="170sp"
                     android:layout_marginEnd="20sp"
                     android:background="@color/black"
-                    android:text="@string/teamBScore"
+                    android:text="0/0"
                     android:textColor="#FFFFFF"
                     android:textSize="40sp" />
 
@@ -178,11 +180,11 @@
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:autoSizeTextType="uniform"
+                    android:backgroundTint="#FFFFFF"
                     android:text="@string/oneRun"
                     android:textColor="#000000"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="#FFFFFF"/>
+                    android:textStyle="bold" />
 
                 <!--                Creating Button 2-->
                 <Button
@@ -192,11 +194,11 @@
                     android:layout_marginStart="30sp"
                     android:layout_marginEnd="30sp"
                     android:autoSizeTextType="uniform"
+                    android:backgroundTint="#FFFFFF"
                     android:text="@string/twoRun"
                     android:textColor="#000000"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="#FFFFFF"/>
+                    android:textStyle="bold" />
 
                 <!--                Creating Button 3-->
                 <Button
@@ -205,11 +207,11 @@
                     android:layout_height="40sp"
                     android:layout_marginEnd="30sp"
                     android:autoSizeTextType="uniform"
+                    android:backgroundTint="#FFFFFF"
                     android:text="@string/threeRun"
                     android:textColor="#000000"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="#FFFFFF"/>
+                    android:textStyle="bold" />
 
                 <!--                Creating Button 4-->
                 <Button
@@ -218,11 +220,11 @@
                     android:layout_height="40sp"
                     android:layout_marginEnd="30sp"
                     android:autoSizeTextType="uniform"
+                    android:backgroundTint="#FFC300"
                     android:text="@string/fourRun"
                     android:textColor="#FF0000"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="#FFC300"/>
+                    android:textStyle="bold" />
 
                 <!--                Creating Button 6-->
                 <Button
@@ -230,11 +232,11 @@
                     android:layout_width="40sp"
                     android:layout_height="40sp"
                     android:autoSizeTextType="uniform"
+                    android:backgroundTint="#FF0000"
                     android:text="@string/sixRun"
                     android:textColor="#FFC300"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="#FF0000"/>
+                    android:textStyle="bold" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
