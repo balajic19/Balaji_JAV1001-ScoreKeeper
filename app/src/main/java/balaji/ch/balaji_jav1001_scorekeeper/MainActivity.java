@@ -12,20 +12,17 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private int teamAScore = 0;
     private int teamBScore = 0;
-    private Boolean teamA = false;
-    private Boolean teamB = false;
+    private Boolean teamBChecked = false;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
 
 //        Initializing Score Buttons from 1 to 6
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         Button fourScore = findViewById(R.id.four);
         Button sixScore = findViewById(R.id.six);
 
-        SwitchCompat switchTeam = findViewById(R.id.teamSide);
 
         oneScore.setOnClickListener(this);
         twoScore.setOnClickListener(this);
@@ -43,23 +39,24 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         fourScore.setOnClickListener(this);
         sixScore.setOnClickListener(this);
 
-        switchTeam.setOnCheckedChangeListener(this);
 
     }
 
     @Override
-    public void onClick(View view){
+    public void onClick(View view) {
         TextView teamATV = findViewById(R.id.teamAScore);
         TextView teamBTV = findViewById(R.id.teamBScore);
 
-        String teamAScoreString = (String.valueOf(teamATV).split("/")[0]);
+        SwitchCompat switchTeam = findViewById(R.id.teamSide);
+
+        String teamAScoreString = (String.valueOf(teamATV.getText()).split("/")[0]);
         teamAScore = Integer.parseInt(teamAScoreString);
 
-        String teamBScoreString = (String.valueOf(teamBTV).split("/")[0]);
+        String teamBScoreString = (String.valueOf(teamBTV.getText()).split("/")[0]);
         teamBScore = Integer.parseInt(teamBScoreString);
 
-        if (teamA){
-            switch (view.getId()){
+        if (!switchTeam.isChecked()) {
+            switch (view.getId()) {
                 case R.id.one:
                     teamAScore += 1;
                     break;
@@ -79,10 +76,9 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                     teamAScore = 0;
                     break;
             }
-            teamATV.setText(teamAScore);
-        }
-        else{
-            switch (view.getId()){
+            teamATV.setText(String.valueOf(teamAScore) + "/0");
+        } else {
+            switch (view.getId()) {
                 case R.id.one:
                     teamBScore += 1;
                     break;
@@ -102,35 +98,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                     teamBScore = 0;
                     break;
             }
-            teamBTV.setText(teamBScore);
-        }
-        Log.d("Team A Score: ", String.valueOf(teamAScore));
-        Log.d("Team B Score: ", String.valueOf(teamBScore));
-
-
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-        if (isChecked){
-//            updateTeamBScore();
-//            teamBTV.setText(teamAScore + "/0");
-            teamB = true;
-        }
-        else{
-//            updateTeamAScore();
-//            teamATV.setText(teamBScore + "/0");
-            teamA = true;
+            teamBTV.setText(String.valueOf(teamBScore) + "/0");
         }
     }
-
-//    public void updateTeamAScore(){
-//        TextView teamATV = findViewById(R.id.teamAScore);
-//
-//
-//    }
-//
-//    public void updateTeamBScore(){
-//        TextView teamBTV = findViewById(R.id.teamBScore);
-//    }
 }

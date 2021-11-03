@@ -14,24 +14,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<!--Creating Text Cricket-->
+        <!--Creating Text Cricket-->
         <TextView
             android:id="@+id/gameName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
             android:layout_marginStart="8sp"
+            android:layout_marginTop="10sp"
             android:layout_marginEnd="8sp"
             android:text="@string/gameName"
             android:textColor="#0F3F9D"
             android:textSize="69sp"
             android:textStyle="italic|bold"
             android:typeface="sans"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-<!--        Creating text Score-->
+        <!--        Creating text Score-->
         <TextView
             android:id="@+id/scoreText"
             android:layout_width="wrap_content"
@@ -47,31 +47,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gameName" />
 
-<!--        Creating a vertical linear layout to insert
+        <!--        Creating a vertical linear layout to insert
             1. teams
             2. Switch
             3. Scores
             4. Run buttons-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/teamIDScore"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0sp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scoreText"
-            app:layout_constraintVertical_bias="0.507">
+            app:layout_constraintVertical_bias="0.395">
 
             <!--            Creating a horizontal linear layout for 2 teams-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/teamID"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8sp"
-                android:layout_marginEnd="8sp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,10 +84,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20sp"
+                        android:layout_marginStart="30sp"
                         android:text="@string/teamA"
                         android:textColor="#000000"
                         android:textSize="30sp"
+                        android:layout_marginEnd="95sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -105,13 +104,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="100sp"
-                        android:layout_marginEnd="20sp"
+
                         android:text="@string/teamB"
                         android:textColor="#000000"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -130,9 +129,8 @@
             <!--            Creating a horizontal Linear layout for scores-->
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/teamScore"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp"
                 android:orientation="horizontal">
 
                 <!--                Creating Scores for Team A-->
@@ -140,7 +138,7 @@
                     android:id="@+id/teamAScore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="45sp"
+                    android:layout_marginStart="30sp"
                     android:background="@color/black"
                     android:text="0/0"
                     android:textAlignment="center"
@@ -152,8 +150,7 @@
                     android:id="@+id/teamBScore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="170sp"
-                    android:layout_marginEnd="20sp"
+                    android:layout_marginStart="150sp"
                     android:background="@color/black"
                     android:text="0/0"
                     android:textColor="#FFFFFF"
